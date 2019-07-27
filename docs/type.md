@@ -47,6 +47,76 @@ long double | 10 byte | 3.4E-4932 到 1.1E+4932 |	19 位小数
 “村里有个姑娘叫小芳，年方十八，身高1米68，长得美丽又大方。”
 
 ```c
-
+#include <stdio.h>
+int main(){
+    char name = "xiaofang";
+    int age = 18;
+    float height = 1.68;
+    
+    printf("村里有个姑娘叫%c，年方%d，身高%f，长得美丽又大方。", name, age, height);
+	return 0;
+}
 ```
 
+## 基本类型之间的数据转换
+
+### 常量
+
+常量：指程序运行期间不会改变的变量，分为**直接常量**和**符号常量**
+
+**直接常量**
+
+```c
+#include <stdio.h>
+int main()
+{
+    printf("PI %d", 3.1415926); // 无需声明的量
+    return 0;  
+}
+```
+
+**符号常量**
+
+```c
+#include <stdio.h>
+#define PI 3.1415926
+int main()
+{
+    printf("PI %d", PI); // 使用之前先使用符号 #define 定义
+    return 0;  
+}
+```
+
+### 类型转换
+
+**自动转换**
+
+自动类型转换在编译阶段完成
+
+```c
+#include <stdio.h>
+int main()
+{
+    char c = 'C';
+    int n =  c; 
+    float f =  c; 
+    double d =   c; 
+    printf("%d %f %lf", n, f, d); // 67 67.000000 67.000000
+    return 0;    
+}
+```
+
+**强制转换**
+
+需要手动定义进行强制转换，形式为：(数据类型) (表达式) 
+
+```c
+#include <stdio.h>
+#define PI 3.1415926
+int main()
+{
+    int intPI = (int)(PI);
+    printf("intPI 的整数部分是%d\n", intPI); // intPI 的整数部分是3
+    return 0;
+}
+```
