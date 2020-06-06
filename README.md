@@ -29,6 +29,13 @@ C 语言做为一些其它高级编程语言的鼻祖，也是程序员入门的
 ### 基础篇
 
 - ```[C++ 基础]``` [入门篇](docs/cpp/base.md)
+- ```[C++ 基础]``` [内联函数与普通函数](docs/cpp/function.md)
+
+### OOP 篇
+
+- ```[C++ OOP]``` [类的声明、定义、实例化入门篇](docs/cpp/oop-base.md)
+- ```[C++ OOP]``` [构造函数和析构函数](docs/cpp/oop-constructor-destructor.md)
+- ```[C++ OOP]``` [对象数组](docs/cpp/oop-constructor-destructor.md)
 
 ### 进阶篇
 
