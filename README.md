@@ -36,6 +36,8 @@ C 语言做为一些其它高级编程语言的鼻祖，也是程序员入门的
 - ```[C++ OOP]``` [类的声明、定义、实例化入门篇](docs/cpp/oop-base.md)
 - ```[C++ OOP]``` [构造函数和析构函数](docs/cpp/oop-constructor-destructor.md)
 - ```[C++ OOP]``` [对象数组](docs/cpp/oop-object-array.md)
+- ```[C++ OOP]``` [对象成员](docs/cpp/oop-object-member.md)
+- ```[C++ OOP]``` [拷贝构造函数](docs/cpp/oop-copy-constructor.md)
 
 ### 进阶篇
 
